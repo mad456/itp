@@ -1,0 +1,8 @@
+first = input("What is your first name?")
+last = input("What is your last name?")
+color = input("What's your favorite color?")
+
+if first.strip() == '' or last.strip() == '':
+    print("Error: First name and last name cannot be blank please try again.")
+else:
+    print(f"Your name is {last}, {first} {last}, and your favorite color is {color} the color {color}.")

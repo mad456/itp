@@ -1,0 +1,20 @@
+import tkinter as tk
+root = tk.Tk()
+root.title("favoret color")
+
+def change_color():
+    color = color_input.get()
+    background.config(bg=color, text=color)
+
+change_button = tk.Button(root, text="enter", command=change_color)
+change_button.pack()
+
+color_label = tk.Label(root, text="whats your favoret color")
+color_label.pack()
+color_input = tk.Entry(root)
+color_input.pack()
+
+background = tk.Label(root, width=50, height=5)
+background.pack()
+
+root.mainloop()
